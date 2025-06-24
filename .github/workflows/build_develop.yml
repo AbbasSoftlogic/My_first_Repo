@@ -7,7 +7,7 @@ on:
 
 env:
   Branch: "master"
-  Environment: "dev"
+  #Environment: "dev"
 
 jobs:
   call-shared:
@@ -15,6 +15,6 @@ jobs:
     uses: AbbasSoftlogic/Java2/.github/workflows/build.yml@master 
     with:
       branch: ${{ env.Branch }}
-      environment: ${{ env.Environment }}
+      #environment: ${{ env.Environment }}
       release_version: ${{ github.ref_name }}.${{ github.run_number }}
     secrets: inherit
