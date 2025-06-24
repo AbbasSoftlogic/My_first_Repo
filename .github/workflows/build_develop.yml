@@ -13,8 +13,10 @@ jobs:
   call-shared:
     #uses: azu-commercial-it/az-glbl-freedom-workflow/.github/workflows/build.yml@master
     uses: AbbasSoftlogic/Java2/.github/workflows/build.yml@master 
-    #with:
+    with:
       #branch: ${{ env.Branch }}
+      branch: master
       #environment: ${{ env.Environment }}
-      #release_version: ${{ github.ref_name }}.${{ github.run_number }}
+      environment: dev
+      release_version: ${{ github.ref_name }}.${{ github.run_number }}
     #secrets: inherit
