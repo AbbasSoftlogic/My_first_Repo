@@ -17,6 +17,6 @@ jobs:
       #branch: ${{ env.Branch }}
       branch: "master"
       #environment: ${{ env.Environment }}
-      environment: "dev"
+      #environment: "dev"
       #release_version: ${{ github.ref_name }}.${{ github.run_number }}
     secrets: inherit
