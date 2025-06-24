@@ -12,7 +12,7 @@ env:
 jobs:
   call-shared:
     #uses: azu-commercial-it/az-glbl-freedom-workflow/.github/workflows/build.yml@master
-    uses: Java2/.github/workflows/build.yml@master
+    uses: AbbasSoftlogic/Java2/.github/workflows/build.yml@master
     with:
       branch: ${{ env.Branch }}
       environment: ${{ env.Environment }}
