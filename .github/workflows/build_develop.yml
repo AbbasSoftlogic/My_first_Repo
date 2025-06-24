@@ -5,16 +5,16 @@ on:
     branches:
       - master 
 
-env:
-  Branch: "master"
+#env:
+  #Branch: "master"
   #Environment: "dev"
 
 jobs:
   call-shared:
     #uses: azu-commercial-it/az-glbl-freedom-workflow/.github/workflows/build.yml@master
     uses: AbbasSoftlogic/Java2/.github/workflows/build.yml@master 
-    with:
-      branch: ${{ env.Branch }}
+    #with:
+      #branch: ${{ env.Branch }}
       #environment: ${{ env.Environment }}
-      release_version: ${{ github.ref_name }}.${{ github.run_number }}
-    secrets: inherit
+      #release_version: ${{ github.ref_name }}.${{ github.run_number }}
+    #secrets: inherit
