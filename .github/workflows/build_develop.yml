@@ -15,8 +15,8 @@ jobs:
     uses: AbbasSoftlogic/Java2/.github/workflows/build.yml@master 
     with:
       #branch: ${{ env.Branch }}
-      branch: master
+      branch: "master"
       #environment: ${{ env.Environment }}
-      environment: dev
+      environment: "dev"
       release_version: ${{ github.ref_name }}.${{ github.run_number }}
-    #secrets: inherit
+    secrets: inherit
