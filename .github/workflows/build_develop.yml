@@ -3,7 +3,7 @@ name: Build Trigger from Freedom Repo
 on:
   push:
     branches:
-      - master
+      - master 
 
 env:
   Branch: "master"
